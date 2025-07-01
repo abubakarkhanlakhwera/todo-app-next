@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import TodoForm from '../components/TodoForm';
-import TodoItems from '../components/TodoItems';
+import TodoItem from '../components/TodoItems';
 
 export default function Home() {
   const [todos, setTodos] = useState([]);
@@ -39,7 +39,7 @@ export default function Home() {
           <p className="text-gray-500">No tasks yet — add one!</p>
         ) : (
           todos.map(todo => (
-            <TodoItems
+            <TodoItem
               key={todo.id}
               todo={todo}
               toggleTodo={toggleTodo}

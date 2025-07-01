@@ -1,4 +1,4 @@
-
+'use client';
 
 export default function TodoItems({ todo, toggleTodo, deleteTodo }) {
   return (
